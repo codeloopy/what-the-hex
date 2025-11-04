@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Colors from "../Colors.js";
 
+import CopiedPopup from "./CopiedPopup.jsx";
 import SearchForm from "./SearchForm.jsx";
 import SearchResults from "./SearchResults.jsx";
 
@@ -46,6 +47,7 @@ export default function ColorWindow() {
 
   return (
     <div id="colorWindowContainer">
+    {isCopied && <CopiedPopup />}
       <div id="colorWindow" style={{ backgroundColor: htmlColor }}>
         <span style={{ color: "white", cursor: 'pointer' }} onClick={() => handleCopy(htmlColor)}>{htmlColor}</span>
       </div>
