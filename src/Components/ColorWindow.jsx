@@ -10,6 +10,7 @@ export default function ColorWindow() {
   const [htmlColor, setHtmlColor] = useState("#000000");
   const [searchColor, setSearchColor] = useState("");
   const [searchColorResults, setSearchColorResults] = useState([]);
+  const [isCopied, setIsCopied] = useState(false);
 
   function handleSelect(event) {
     setHtmlColor(event.target.value);
@@ -29,10 +30,24 @@ export default function ColorWindow() {
     setSearchColorResults(results);
   }
 
+  const handleCopy = async (hexCode) => {
+    try {
+      await navigator.clipboard.writeText(hexCode);
+      setIsCopied(true);
+
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 2000);
+
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
+  };
+
   return (
     <div id="colorWindowContainer">
       <div id="colorWindow" style={{ backgroundColor: htmlColor }}>
-        <span style={{ color: "white" }}>{htmlColor}</span>
+        <span style={{ color: "white", cursor: 'pointer' }} onClick={() => handleCopy(htmlColor)}>{htmlColor}</span>
       </div>
       <select name="colors" id="colors" onChange={e => handleSelect(e)} value={htmlColor}>
         {Colors.map((color) => {
