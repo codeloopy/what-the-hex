@@ -8,11 +8,11 @@ export default function ColorWindow() {
   const [searchColor, setSearchColor] = useState("");
   const [searchColorResults, setSearchColorResults] = useState([]);
 
-  function handleSelect() {
+  function handleSelect(event) {
     setHtmlColor(event.target.value);
   }
 
-  function handleSearch() {
+  function handleSearch(event) {
     event.preventDefault();
     colorResults(searchColor);
     setSearchColor("");
@@ -31,7 +31,7 @@ export default function ColorWindow() {
       <div id="colorWindow" style={{ backgroundColor: htmlColor }}>
         <span style={{ color: "white" }}>{htmlColor}</span>
       </div>
-      <select name="colors" id="colors" onChange={handleSelect}>
+      <select name="colors" id="colors" onChange={e => handleSelect(e)} value={htmlColor}>
         {Colors.map((color) => {
           return (
             <option value={color.code} key={color.id}>
@@ -41,11 +41,11 @@ export default function ColorWindow() {
         })}
       </select>
       <div id="searchColor">
-        <form onSubmit={handleSearch}>
+        <form onSubmit={e => handleSearch(e)}>
           <input
             type="text"
             placeholder="Type Color"
-            onChange={(e) => colorResults(setSearchColor(e.target.value))}
+            onChange={(e) => colorResults(setSearchColor(e.target.value.toLowerCase()))}
             value={searchColor}
           />
           <button type="submit">Search</button>
