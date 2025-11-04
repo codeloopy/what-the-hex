@@ -1,6 +1,9 @@
 import { useState } from "react";
 import Colors from "../Colors.js";
 
+import SearchForm from "./SearchForm.jsx";
+import SearchResults from "./SearchResults.jsx";
+
 import "./ColorWindow.css";
 
 export default function ColorWindow() {
@@ -40,26 +43,9 @@ export default function ColorWindow() {
           );
         })}
       </select>
-      <div id="searchColor">
-        <form onSubmit={e => handleSearch(e)}>
-          <input
-            type="text"
-            placeholder="Type Color"
-            onChange={(e) => colorResults(setSearchColor(e.target.value.toLowerCase()))}
-            value={searchColor}
-          />
-          <button type="submit">Search</button>
-        </form>
-      </div>
-      <div id="results">
-        {searchColorResults.map((color) => {
-          return (
-            <p style={{ backgroundColor: color.code }} key={color.id}>
-              {color.name} {color.code}
-            </p>
-          );
-        })}
-      </div>
+
+      <SearchForm colorResults={colorResults} searchColor={searchColor} setSearchColor={setSearchColor} handleSearch={handleSearch} />
+      <SearchResults searchColorResults={searchColorResults} />
     </div>
   );
 }

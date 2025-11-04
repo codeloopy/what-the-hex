@@ -14,7 +14,7 @@
   }
 
   select {
-    margin: 1em 0;
+    margin: .5em 0;
     padding: 0.5em 1em;
     border-radius: 5px;
     border: 1px solid gray;
@@ -33,7 +33,7 @@
   }
 
   #searchColor {
-    margin: 2em 0;
+    margin: .5em 0;
 
     form {
       display: flex;
