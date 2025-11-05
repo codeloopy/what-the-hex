@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SearchResults({ searchColorResults }) {
+export default function SearchResults({ searchColorResults, handleCopy }) {
   return (
     <div id="results">
       {
@@ -15,11 +15,11 @@ export default function SearchResults({ searchColorResults }) {
         <tbody>
           {searchColorResults.map((color) => {
             return (
-              <div key={color.id} style={{display: 'flex', justifyContent: 'space-between', gap:'1em'}}>
+              <div key={color.id} style={{display: 'flex', justifyContent: 'space-between', gap:'1em', cursor: 'pointer'}} onClick={() => handleCopy(color.code)}>
                 <p style={{ width: '50%',backgroundColor: color.code, color: color.hexComplementary }}>
                   {color.name} {color.code}
                 </p>
-                <p style={{ width: '50%', backgroundColor: color.hexComplementary, color: color.code }}>
+                <p style={{ width: '50%', backgroundColor: color.hexComplementary, color: color.code, cursor: 'pointer' }} onClick={() => handleCopy(color.code)}>
                   {color.hexComplementary}
                 </p>
               </div>

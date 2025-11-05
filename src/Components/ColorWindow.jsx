@@ -62,7 +62,7 @@ export default function ColorWindow() {
       </select>
 
       <SearchForm colorResults={colorResults} searchColor={searchColor} setSearchColor={setSearchColor} handleSearch={handleSearch} />
-      <SearchResults searchColorResults={searchColorResults} />
+      <SearchResults searchColorResults={searchColorResults} handleCopy={handleCopy} />
     </div>
   );
 }
