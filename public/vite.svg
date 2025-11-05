@@ -1,1 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="31.88" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 257"><defs><linearGradient id="IconifyId1813088fe1fbc01fb466" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%"><stop offset="0%" stop-color="#41D1FF"></stop><stop offset="100%" stop-color="#BD34FE"></stop></linearGradient><linearGradient id="IconifyId1813088fe1fbc01fb467" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%"><stop offset="0%" stop-color="#FFEA83"></stop><stop offset="8.333%" stop-color="#FFDD35"></stop><stop offset="100%" stop-color="#FFA800"></stop></linearGradient></defs><path fill="url(#IconifyId1813088fe1fbc01fb466)" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"></path><path fill="url(#IconifyId1813088fe1fbc01fb467)" d="M185.432.063L96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z"></path></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   aria-hidden="true"
+   role="img"
+   class="iconify iconify--logos"
+   width="31.88"
+   height="32"
+   preserveAspectRatio="xMidYMid meet"
+   viewBox="0 0 256 257"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="vite.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="3.6519417"
+     inkscape:cx="13.965174"
+     inkscape:cy="4.381231"
+     inkscape:window-width="1800"
+     inkscape:window-height="1097"
+     inkscape:window-x="0"
+     inkscape:window-y="44"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <defs
+     id="defs5">
+    <linearGradient
+       id="IconifyId1813088fe1fbc01fb466"
+       x1="-.828%"
+       x2="57.636%"
+       y1="7.652%"
+       y2="78.411%"
+       inkscape:label="vite gradient">
+      <stop
+         offset="0%"
+         stop-color="#41D1FF"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#BD34FE"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="IconifyId1813088fe1fbc01fb467"
+       x1="188.00649"
+       x2="199.00609"
+       y1="3.5533929"
+       y2="141.10861"
+       gradientTransform="matrix(0.37987796,0,0,1.0865616,73.811405,54.979291)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FFEA83"
+         id="stop3" />
+      <stop
+         offset="8.333%"
+         stop-color="#FFDD35"
+         id="stop4" />
+      <stop
+         offset="100%"
+         stop-color="#FFA800"
+         id="stop5" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#IconifyId1813088fe1fbc01fb466"
+       id="linearGradient7"
+       x1="10.641353"
+       y1="49.999413"
+       x2="89.361389"
+       y2="49.999413"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <polygon
+     stroke="#b4d670"
+     stroke-width="0.025"
+     points="72.107,35.227 81.461,45.931 69.065,55.321 65.306,39.329 66.678,57.142 51.684,67.999 57.203,32.026 52.201,53.434 45.631,55.121 42.394,55.711 41.297,51.582 39.597,50.332 39.174,53.683 37.705,57.146 32.614,66.009 32.104,78.953 35.532,87.012 40.373,89.089 43.774,86.422 43.463,82.587 40.897,79.219 39.496,81.254 41.974,85.422 34.869,82.565 36.972,82.354 36.025,80.735 36.858,77 37.303,76.904 37.192,76.432 41.069,74.482 41.28,75.028 41.598,74.586 45.092,77.646 44.957,78.38 45.562,78.303 47.644,84.369 46.907,84.731 47.686,85.12 46.231,91.059 45.431,90.734 45.849,91.748 41.907,94.646 41.229,93.56 41.154,94.873 33.676,94.525 33.777,92.935 32.538,94.006 27.421,88.138 28.376,86.832 26.771,86.969 23.757,77.091 25.625,76.479 23.541,75.928 22.624,64.021 24.791,63.508 22.606,62.426 23.003,53.918 23.061,52.335 25.625,52.8 27.892,52.967 31.627,52.633 27.971,52.359 25.766,52.028 23.133,51.142 16.471,45.918 12.537,40.897 10.653,36.061 14.237,39.596 19.054,42.938 24.525,44.796 30.193,23.723 37.305,16.397 38.858,13.073 49.006,8.514 58.979,10.729 67.89,5.127 78.66,10.244 67.406,19.222 80.078,12.119 83.744,23.16 71.907,27.024 84.345,24.961 89.347,36.538 83.521,44.135 "
+     fill="#000000"
+     id="polygon1"
+     transform="matrix(2.8192111,0,0,2.8192111,-14.624133,-11.729035)"
+     style="fill:url(#linearGradient7)" />
+</svg>
