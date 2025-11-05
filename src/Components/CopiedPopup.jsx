@@ -1,18 +1,22 @@
-const popupStyle = {
-  position: 'fixed',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  backgroundColor: 'white',
-  color: 'black',
-  padding: '10px 20px',
-  borderRadius: '50px',
-  border: '1px solid black',
-  zIndex: '1000',
-}
+import { useEffect, useState } from 'react';
+import './CopiedPopup.css';
 
-export default function CopiedPopup() {
+export default function CopiedPopup({isCopied}) {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    if (isCopied) {
+      setShow(true);
+      const timer = setTimeout(() => setShow(false), 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [isCopied]);
+
+  if (!isCopied && !show) return null;
+
   return (
-    <div style={popupStyle}>Copied! 🎉</div>
-  )
+    <div className={`copiedPopup ${show ? 'show' : ''}`}>
+      Copied! 🎉
+    </div>
+  );
 }

@@ -47,7 +47,7 @@ export default function ColorWindow() {
 
   return (
     <div id="colorWindowContainer">
-    {isCopied && <CopiedPopup />}
+    {isCopied && <CopiedPopup isCopied={isCopied} />}
       <div id="colorWindow" style={{ backgroundColor: htmlColor }}>
         <span style={{ color: "white", cursor: 'pointer' }} onClick={() => handleCopy(htmlColor)}>{htmlColor}</span>
       </div>
